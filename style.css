@@ -1,0 +1,226 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Dosis", sans-serif;
+}
+  
+ /*header in middle info */
+.container {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(148, 48, 48, 0.2), rgba(167, 67, 67 0.4));
+	background-color: #292B38;
+	position: absolute;
+}
+.container_two {
+
+	width: 100%;
+	height: 100vh;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+/* middle-menu buttons */
+.menu ul{
+   position: absolute;
+   width: auto;
+   height: auto;
+   display: flex;
+   left: 40%;
+   top: 58%;
+
+}
+.menu ul li{
+	list-style: none;
+	width: auto;
+	height:auto;
+	margin: 20px 75px;
+	color: #fff;
+	cursor: pointer;
+} 
+
+/* Fixed so the menu-text will change color once the button is hoovered over.*/
+.menu a:hover {
+  background-color: chocolate;
+  color: chocolate;
+  font-weight: 300;
+  transition: all ease 0.5s;
+}
+.menu a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+/*Position and button for each menu option.*/
+.home{	
+	position: relative;
+	text-decoration: none;
+	color: #fff;
+	border: 2px solid transparent;
+	border-radius: 17px; 
+	background-image: linear-gradient(#42455a,#42455a) , radial-gradient(circle at top left, #fff, #fff);
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	position: fixed;
+}
+.home span {
+	display: block;
+	padding: 10px 50px;
+}
+
+.projects{
+	position: absolute;
+	text-decoration: none;
+	color: #fff;
+	border: 2px solid transparent;
+	border-radius: 17px; 
+	background-image: linear-gradient(#42455a,#42455a) , radial-gradient(circle at top left, #fff, #fff);
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	position: absolute;
+}
+.projects span{
+	display: block;
+	padding: 10px 30px;
+}
+
+
+/* hamburger nav-bar stuff */
+.navbar {
+	width: 300px;
+	height: 100%;
+	background-color: #333542;
+	position: fixed;
+	top: 0;
+	right: -300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20% 0 0 95%;
+	transition: right 0.8s cubic-bezier(0.5, 0, 0, 0.5);
+
+}
+
+.change {
+	right: 0;
+}
+.hamburger-menu {
+	width: 45px;
+	height: 35px;
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.line {
+	width: 100%;
+	height: 3px;
+	background-color:  chocolate;
+	transition: all 0.8s;
+
+}
+
+.change .line-1 {
+	transform: rotateZ(-405deg) translate(-8px, 6px);
+}
+
+.change .line-2 {
+	opacity: 0;
+}
+.change .line-3 {
+	transform: rotateZ(405deg) translate(-8px, -6px);
+}
+
+.nav-list {
+	text-align: right;
+
+}
+
+.nav-item {
+	list-style: none;
+	margin: 25px;
+}
+
+.nav-link {
+	text-decoration: none;
+	font-size: 22px;
+	color: #eee;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	position: relative;
+	padding: 3px 0;
+}
+
+.nav-link::before,
+.nav-link::after {
+	content:"";
+	width: 100%;
+	height: 2px;
+	background-color: chocolate;
+	position: absolute;
+	left: 0;
+	transform: scaleX(0);
+	transition: transform 0.5s;
+}
+
+.nav-link::after{
+	bottom: 0;
+	transform-origin: right;
+}
+.nav-link::before{
+	top: 0;
+	transform-origin: left;
+}
+.nav-link:hover::before,
+.nav-link:hover::after {
+	transform: scaleX(1);
+
+}
+
+/* Fixed/sticky icon bar -- > For SOCIAL MEDIA */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Styled the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Styled the social media icons with color*/
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.github {
+  background: #696e78;
+  color: white;
+ }
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+.google {
+  background: #dd4b39;
+  color: white;
+
+
+
