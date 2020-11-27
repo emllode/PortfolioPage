@@ -37,16 +37,25 @@
 	   <!--Menu buttons middle of screen -->
 	  </nav>
 	  	<section id="container-text">
-		    <h1 style="font-size: 6vw">Christopher</h1>
-		    <h1 style="font-size: 6vw">Bergman </h1>
+		    <h1 style="font-size: 5vw">Christopher</h1>
+		    <h1 style="font-size: 5vw">Bergman </h1>
 	       <p style="font-size:2vw;"><span id="words">[ Software Engineer ]</span></p>
-      </section>
-	  	<div class="menu"> 
+	       	  	<div class="menu"> 
  		<ul> 
  			<li><a href="https://docs.google.com/document/d/1kdGvGVZn5BcTGM8OzA4d-fWtuyLYFVLY_oMenSZKrNY/edit?usp=sharing" target="_blank" class="home"><span>CV</span></a></li>
  			<li><a href ="file:///C:/Users/cbchr/Webproject/newprojektweb/webpageAbout.html#" class ="projects"><span>Portfolio</span></a></li>
  		</ul>
  	</div>	 
+
+ 	<!-- Har denna sektion då min navbar på sidan för sociala-medier krånglar annars.  -->
+      </section>
+	  	<div class="menu"> 
+ 		<ul> 
+ 		
+ 		</ul>
+ 	</div>	 
+
+
 
  	</body>
  		<!-- The social media icon bar -->
@@ -67,16 +76,16 @@
 		(function () {
 			var words = [
 			 "[ Software Engineer ]",
-			 "[ HTML, CSS, Javascript ]",
+			 "[ HTML, CSS, JavaScript ]",
 			 "[ C#, .NET, SQL ]",
-			 "[ Python ]"
+			 "[ Python, Flask ]"
 			],
 			i = 0;
 			setInterval(function(){
 				$('#words').fadeOut(function(){
 					$(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
 				});
-			}, 2000)
+			}, 2500)
 		})();
 	</script>
 

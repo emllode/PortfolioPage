@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 
 * {
 	margin: 0;
@@ -7,7 +7,7 @@
 
 
 body {
-	font-family: 'Itim', cursive;
+	font-family: Dosis;
 	background-color: #292B38;
 }
 
@@ -24,7 +24,7 @@ body {
 
 h1 {
 		color: white;
-		font-family: "Itim" cursive;
+		font-family: Dosis;
 		font-weight: 100;
 		text-transform: uppercase;
 		font-size: 30px;
@@ -32,20 +32,48 @@ h1 {
 
 p  {
 		color: white;
-		font-family: "Itim" cursive;
+		font-family: Dosis;
 		font-weight: 100;
 		font-size: 30px;
 	}
 
-/* middle-menu buttons */
+
 
 .menu ul{
+    display: flex;
+    flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+	position: relative;
+  	left: -60px;
+
+	}
+
+.menu ul li{
+	list-style: none;
+	width: 10px;
+	height:auto;
+	margin: 20px 75px;
+	color: #fff;
+	cursor: pointer;
+} 
+
+
+
+/* middle-menu buttons */
+
+/* BEHÅLL ORGINIAL !!!
+.menu ul{
    position: absolute;
+   display: flex;
    width: auto;
    height: auto;
    display: flex;
    left: 40%;
-   top: 60%;
+   top: 57%;
+   justify-content: center;
+
 }
 
 .menu ul li{
@@ -55,7 +83,9 @@ p  {
 	margin: 20px 75px;
 	color: #fff;
 	cursor: pointer;
+	justify-content: center;
 } 
+*/
 
 /* Fixed so the menu-text will change color once the button is hoovered over.*/
 
@@ -114,6 +144,7 @@ p  {
 	align-items: center;
 	border-radius: 20% 0 0 95%;
 	transition: right 0.8s cubic-bezier(0.5, 0, 0, 0.5);
+	z-index: 1;
 }
 
 .change {
