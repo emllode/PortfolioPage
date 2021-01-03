@@ -9,31 +9,49 @@ body {
 }
 
 .container-middle {
-	position: relative;
-	width: 1200px;
-	height: 700px;
-	margin: 240px auto;
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	flex-direction: column;
+	align-items:center;
+	text-align: center;
+	min-height: 80vh;
+	
 
 
 
 }
-.container-middle .box{
+
+section{
+	 width: 25%;
+	 margin: 500 auto;
+}
+
+h1{
+	display: inline;
+}
+   .box{
 	position: relative;
-	width: calc(400px - 30px);
-	height: calc(300px);
+	width: calc(600px - 30px);
+	height: calc(400px);
 	background: #333542;
 	float: left;
-	margin: 15px;
-	box-sizing: border-box;
+	margin: 0 auto;
 	overflow: hidden;
 	border-radius: 20px;
 	color: white;
 	display: flex;
 	justify-content: center;
 	box-shadow: 0.3px 0.3px 0.3px 0.px;
+
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
 	}
 
 
@@ -181,5 +199,4 @@ body {
 .google {
   background: #dd4b39;
   color: white;
-
 
